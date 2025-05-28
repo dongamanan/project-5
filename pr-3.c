@@ -16,13 +16,21 @@ int main()
 			scanf("%d",&a[i][j]);
 		}
 	}
+	int transpose[size][size];
+	for(int i=0;i<size;i++)
+	{
+		for(int j=0;j<size;j++)
+		{
+			transpose[j][i]=a[i][j];
+		}
+	}
 	
 	printf("\nthe transpose matrix of an array:\n");
 	for(int i=0;i<size;i++)
 	{
 		for(int j=0;j<size;j++)
 		{
-			printf("%d ",a[i][j]);
+			printf("%d ",transpose[i][j]);
 		}
 		printf("\n");
 	}
